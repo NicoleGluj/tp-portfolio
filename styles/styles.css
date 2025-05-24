@@ -7,11 +7,11 @@
 }
 
 header {
-  background-color: #5568af;
+  background: linear-gradient(to right, #ec1763 75%, #cdd629 35%);
 }
 
 .header-content {
-  padding: 20px;
+  padding: 40px;
   display: flex;
   justify-content: space-between;
   align-items: end;
@@ -22,28 +22,52 @@ header h2 {
   font-weight: 500;
 }
 
-.lista-navegacion {
-  display: flex;
-  justify-content: space-between;
-  align-items: end;
-  list-style-type: none;
-  margin-bottom: 5px;
-  font-weight: 500;
-  gap: 20px;
+.header-button {
+  background: none;
+  border: none;
+  font-weight: 600;
+  color: #f37826;
+  font-size: 25px;
 }
 
+.lista-navegacion {
+  visibility: hidden;
+  display: none;
+  position: absolute;
+  right: 20px;
+  z-index: 1;
+  transition: width 5s, height 2s, transform 2s;
+  background-color: white;
+  color: #ec1763;
+  padding: 70px;
+  line-height: 40px;
+  list-style-type: none;
+  font-weight: 600;
+}
+
+.header-navegacion:hover .lista-navegacion {
+  visibility: visible;
+  display: block;
+}
+
+
 .inicio {
-  background-color: #5568af;
-  height: 500px;
+  background: linear-gradient(to right, #ec1763 75%, #cdd629 35%);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 50px;
 }
 
+
 .inicio-name h1 {
-  color: #f37826;
+  color: white;
   margin-left: 100px;
-  font-size: 70px;
+  font-size: 100px;
+  font-family: "Rum Raisin", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: 5px;
 }
 
 .inicio-name h2 {
@@ -58,8 +82,20 @@ header h2 {
   height: 400px;
   align-items: end;
   border-radius: 50%;
-  margin-right: 100px;
+  margin-right: 240px;
   border-style: solid;
+  border-width: 6px;
   border-color: #ec1763;
+  margin-top: -40px;
+}
 
+.inicio-text {
+  color: white;
+  font-size: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 300px);
+  margin-left: 100px;
+  margin-top: 70px;
+  gap: 100px;
+  text-align: justify;
 }
