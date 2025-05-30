@@ -42,22 +42,35 @@
   padding: 20px;
 }
 
-.inicio-welcome {
+
+.inicio-name h1 {
+  color: black;
+  font-family: "Montserrat";
+  font-size: 9vh;
+  font-weight: 400;
+  text-align: center;
+  line-height: 1.2;
+}
+
+.contenedor-inicio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.inicio-nombre {
   font-size: 2vh;
   font-family: "Montserrat";
   font-weight: 550;
   color: black;
-  text-align: center;
+  text-align: left;
 }
 
-.inicio-name h1 {
+.inicio-year {
+  font-size: 2vh;
+  font-family: "Montserrat";
+  font-weight: 550;
   color: black;
-  font-family: "Lore";
-  font-style: italic;
-  font-size: 7vh;
-  font-weight: 500;
-  text-align: center;
-  line-height: 1.2;
 }
 
 .inicio-future {
@@ -68,20 +81,70 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 5vh;
+  padding: 40px;
 }
 
 /*SECTION SOBRE MI*/
 
 .sobre-mi {
-  height: 50vh;
+  padding: 40px;
+}
+
+.sobre-mi-inicio {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: start;
+  margin-top: 30px;
+  margin-bottom: 40px;
+  gap: 30px;
+}
+
+.sobre-mi h3 {
+  background: radial-gradient(circle, rgb(243, 229, 125) 0%, rgba(190, 240, 100, 1) 50%, rgba(169, 235, 125, 1) 64%, rgba(100, 220, 210, 1) 100%);
+  background-clip: text;
+  color: transparent;
+  font-family: "Montserrat";
+  font-size: 5vh;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.sobre-mi-inicio img {
+  max-width: 700px;
+}
+
+@media (min-width: 1024px) {
+  .sobre-mi-inicio img {
+    max-width: 600px;
+  }
+}
+
+@media (min-width:768px) and (max-width: 1023px) {
+  .sobre-mi-inicio img {
+    max-width: 400px;
+  }
+
+  .sobre-mi h3 {
+    font-size: 4vh;
+  }
+}
+
+@media (max-width: 767px) {
+  .sobre-mi-inicio img {
+    max-width: 300px;
+    margin-bottom: 30px;
+  }
+
+  .sobre-mi-inicio {
+    flex-direction: column;
+  }
 }
 
 .contenedor-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
-  padding: 40px;
 }
 
 /*SOBRE MI-PRESENTACION*/
@@ -165,40 +228,101 @@
 
 /*PROYECTOS*/
 
-.proyectos {
-  margin: 40px;
-  height: 50vh;
-}
-
 .proyectos h2 {
-  color: black;
-  font-family: "Lore";
-  font-style: italic;
+  background: radial-gradient(circle, rgb(243, 229, 125) 0%, rgba(190, 240, 100, 1) 50%, rgba(169, 235, 125, 1) 64%, rgba(100, 220, 210, 1) 100%);
+  background-clip: text;
+  color: transparent;
+  font-family: "Montserrat";
   font-size: 5vh;
-  font-weight: 600;
-  text-align: center;
+  font-weight: 700;
   line-height: 1.2;
+  padding: 20px;
+  text-align: center;
 }
 
 .contenedor-proyectos {
-  background: radial-gradient(circle, rgba(255, 250, 215, 1) 0%, rgba(190, 240, 100, 1) 50%, rgba(169, 235, 125, 1) 64%, rgba(100, 220, 210, 1) 100%);
-  height: 300px;
-  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
 }
+
+.contenedor-proyectos img {
+  max-width: 300px;
+}
+
+@media (min-width: 1024px) {
+  .contenedor-proyectos img {
+    max-width: 300px;
+  }
+}
+
+@media (min-width:768px) and (max-width: 1023px) {
+  .contenedor-proyectos img {
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 767px) {
+  .contenedor-proyectos img {
+    max-width: 200px;
+    margin-bottom: 30px;
+  }
+
+  .proyectos h2 {
+    font-size: 4.5vh;
+    text-align: center;
+  }
+
+  .contenedor-proyectos {
+    flex-direction: column;
+  }
+}
+
+/*SECTION - HABILIDADES*/
+
+.habilidades {
+  background: linear-gradient(90deg, rgba(79, 154, 184, 1) 0%, rgba(106, 247, 165, 1) 49%, rgba(242, 231, 126, 1) 84%);
+  margin-top: 50px;
+  padding: 40px;
+}
+
+.habilidades h2 {
+  color: white;
+  font-family: "Montserrat";
+  font-size: 5vh;
+  font-weight: 700;
+  line-height: 1.2;
+  text-align: center;
+}
+
+.contenedor-imagenes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 50px;
+}
+
+.contenedor-imagenes img {
+  max-width: 200px;
+}
+
 
 /*FOOTER - CONTACTO*/
 
 footer {
-  background-color: rgb(219, 219, 219);
-  height: 40vh;
+  background-color: white;
+  border-top: 2px solid rgb(173, 255, 152);
+  margin: 40px;
 }
 
-footer h2 {
-  margin: 40px;
-  color: black;
-  font-family: "Lore";
-  font-style: italic;
-  font-size: 5vh;
-  font-weight: 600;
-  line-height: 1.2;
+.contenedor-logos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+}
+
+.contenedor-logos img {
+  max-width: 70px;
 }
