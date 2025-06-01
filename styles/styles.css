@@ -46,12 +46,13 @@
   color: black;
   font-family: "Montserrat";
   font-size: 9vh;
-  font-weight: 400;
+  font-weight: 600;
+  letter-spacing: 10px;
   text-align: center;
   line-height: 1.2;
 }
 
-.inicio-name h1:hover {
+.inicio-name h1 {
   -webkit-animation: tracking-in-contract 1s cubic-bezier(0.215, 0.610, 0.355, 1.000);
   animation: tracking-in-contract 2s cubic-bezier(0.215, 0.610, 0.355, 1.000);
 }
@@ -60,6 +61,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-top: 1px solid black;
+  padding: 10px;
 }
 
 .inicio-nombre {
@@ -85,16 +88,65 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  padding: 40px;
+  margin: 40px;
+  border: 1px solid black;
+  border-radius: 15px;
+  padding: 5px 15px;
+}
+
+.inicio-name img {
+  max-width: 30px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 40px;
+  border: 1px solid black;
+  border-radius: 15px;
+  animation: scroll 1s alternate infinite;
 }
 
 .inicio-future:hover {
   animation: scale-future 1s forwards;
 }
 
+@media (min-width: 768px) {
+  .inicio-name img {
+    width: 30px;
+  }
+}
+
 @media (max-width: 767px) {
+  .inicio-name h1 {
+    font-size: 7.5vh;
+  }
+
+  .inicio-name img {
+    width: 25px;
+    margin: 10px;
+  }
+
   .inicio-future {
-    padding: 10px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .inicio-name h1 {
+    font-size: 6vh;
+  }
+
+  .inicio-nombre,
+  .inicio-year {
+    font-size: 1.6vh;
+  }
+
+  .inicio-future {
+    font-size: 1.6vh;
+  }
+
+  .inicio-name img {
+    width: 20px;
+    margin: 20px;
   }
 }
 
@@ -142,6 +194,16 @@
   }
 }
 
+@keyframes scroll {
+  from {
+    bottom: 0px;
+  }
+
+  to {
+    bottom: 30px;
+  }
+}
+
 
 /*SECTION SOBRE MI*/
 
@@ -169,7 +231,7 @@
   line-height: 1.2;
 }
 
-.sobre-mi h3:hover {
+.sobre-mi-inicio h3:hover {
   animation: scale-future 1s forwards;
 }
 
