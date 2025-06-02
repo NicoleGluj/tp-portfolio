@@ -19,6 +19,8 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.6/dist/css/bootstrap.min.css" rel="stylesheet"
     integrity="sha384-4Q6Gf2aSP4eDXB8Miphtr37CMZZQ5oXLH2yaXMJ2w8e2ZtHTl7GptT4jmndRuHDT" crossorigin="anonymous">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
   <!--STYLES-->
   <link rel="stylesheet" href="styles/styles.css">
 
@@ -72,25 +74,33 @@
     <section class="section-sobre-mi">
       <div class="sobre-mi-principio">
         <img src="assets/escritorio.png" alt="Imagen perfil Nicole Gluj">
+        <span></span>
         <h3>"Aprendiendo y CRECIENDO <br> en el mundo de la PROGRAMACION"</h2>
       </div>
+
       <!--SOBRE MI (CARDS)-->
       <div class="contenedor-grid">
         <div class="card-presentacion">
-          <h3>SOBRE MI</h3>
-          <p>Hola de nuevo! Si no me conoces aun, mi nombre es Nicole, tengo 21 años y me encuentro en proceso de
-            formación para Web Full Stack Developer.</p>
+          <div class="contenido-presentacion">
+            <h3>SOBRE MI</h3>
+            <p>Hola de nuevo! Si no me conoces aun, mi nombre es Nicole, tengo 21 años y me encuentro en proceso de
+              formación para Web Full Stack Developer.</p>
+          </div>
         </div>
         <div class="card-formacion">
-          <h3>FORMACION</h3>
-          <p>En 2022 comencé a estudiar la carrera de Arquitectura en la Universidad Nacional de La Matanza y luego de
-            tres años de cursada y de largas noches
-            frente a la computadora, me di cuenta de cual era el camino que quería seguir!</p>
+          <div class="contenido-formacion">
+            <h3>FORMACION</h3>
+            <p>En 2022 comencé a estudiar la carrera de Arquitectura en la Universidad Nacional de La Matanza y luego de
+              tres años de cursada y de largas noches
+              frente a la computadora, me di cuenta de cual era el camino que quería seguir!</p>
+          </div>
         </div>
         <div class="card-intereses">
-          <h3>INTERESES</h3>
-          <p>Hoy en día mi interés es capacitarme en el diseño de páginas web.
-            Me fascina todo lo relacionado a aprender diferentes programas y por eso nunca dejo de estudiar! </p>
+          <div class="contenido-intereses">
+            <h3>INTERESES</h3>
+            <p>Hoy en día mi interés es capacitarme en el diseño de páginas web.
+              Me fascina todo lo relacionado a aprender diferentes programas y por eso nunca dejo de estudiar! </p>
+          </div>
         </div>
       </div>
     </section>
@@ -107,24 +117,56 @@
     <section class="section-habilidades">
       <h2>- HABILIDADES -</h2>
       <div class="contenedor-imagenes">
-        <img src="assets/img-habilidades/ac-icono.png" alt="Icono Autocad">
-        <img src="assets/img-habilidades/ps-icono.png" alt="Icono Photoshop">
-        <img src="assets/img-habilidades/rh-icono.png" alt="Icono Rhinoceros 3D">
-        <img src="assets/img-habilidades/vs-icono.png" alt="Icono Visual Studio">
-        <img src="assets/img-habilidades/cv-icono.png" alt="Icono Canva">
+        <div class="contenedor-ac">
+          <img src="assets/img-habilidades/ac-icono.png" alt="Icono Autocad">
+          <h4>AUTOCAD</h4>
+        </div>
+        <div class="contenedor-ps">
+          <img src="assets/img-habilidades/ps-icono.png" alt="Icono Photoshop">
+          <h4>PHOTOSHOP</h4>
+        </div>
+        <div class="contenedor-rh">
+          <img src="assets/img-habilidades/rh-icono.png" alt="Icono Rhinoceros 3D">
+          <h4>RHINOCEROS 3D</h4>
+        </div>
+        <div class="contendor-vs">
+          <img src="assets/img-habilidades/vs-icono.png" alt="Icono Visual Studio">
+          <h4>VISUAL STUDIO</h4>
+        </div>
+        <div class="contenedor-cv">
+          <img src="assets/img-habilidades/cv-icono.png" alt="Icono Canva">
+          <h4>CANVA</h4>
+        </div>
       </div>
     </section>
     <!--SECTION FOOTER CONTACTO-->
     <footer>
-      <div class="contenedor-logos">
-        <img src="assets/img-footer/footer-wpp.png" alt="Icono WhatsApp">
-        <img src="assets/img-footer/footer-facebook.png" alt="Icono Facebook">
-        <img src="assets/img-footer/footer-ig.png" alt="Icono Instagram">
-        <img src="assets/img-footer/footer-linkedin.png" alt="Icono Linkedin">
-        <img src="assets/img-footer/footer-tiktok.png" alt="Icono Tiktok">
-        <img src="assets/img-footer/footer-tw.png" alt="Icono Twitter">
-      </div>
+      <section class="contenedor-footer">
+        <div class="contenedor-saludo">
+          <h3>MI PORTFOLIO</h3>
+          <P>Muchas gracias por ver mi portfolio! 💛 <br>
+            Recorda que podes contactarme por cualquiera de mis redes sociales</P>
+        </div>
+        <div class="contenedor-contacto">
+          <h3>CONTACTO</h3>
+          <p>Buenos Aires, Argentina</p>
+          <p>nicolegluj@gmail.com</p>
+          <p>+54 9 11 1234 5678</p>
+        </div>
+      </section>
+      <section class="contenedor-redes">
+        <h3>MIS REDES SOCIALES</h3>
+        <div class="contenedor-logos">
+          <img src="assets/img-footer/footer-wpp.png" alt="Icono WhatsApp">
+          <img src="assets/img-footer/footer-facebook.png" alt="Icono Facebook">
+          <img src="assets/img-footer/footer-ig.png" alt="Icono Instagram">
+          <img src="assets/img-footer/footer-linkedin.png" alt="Icono Linkedin">
+          <img src="assets/img-footer/footer-tiktok.png" alt="Icono Tiktok">
+          <img src="assets/img-footer/footer-tw.png" alt="Icono Twitter">
+        </div>
+      </section>
     </footer>
+
   </main>
 
   <!--BOOTSTRAP-->
