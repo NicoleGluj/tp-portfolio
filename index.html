@@ -40,16 +40,19 @@
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" href="#">INICIO</a>
+                <a class="nav-link" href="#section-inicio">INICIO</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">SOBRE MI</a>
+                <a class="nav-link" href="#section-sobre-mi">SOBRE MI</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">PROYECTOS</a>
+                <a class="nav-link" href="#section-proyectos">PROYECTOS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link disabled" aria-disabled="true">CONTACTO</a>
+                <a class="nav-link" href="#section-habilidades">HABILIDADES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#section-footer">CONTACTO</a>
               </li>
             </ul>
           </div>
@@ -59,7 +62,7 @@
   </header>
   <main>
     <!--SECTION INICIO / HERO-->
-    <section class="section-inicio">
+    <section class="section-inicio" id="section-inicio">
       <div class="inicio-contenido">
         <h1>PORTFOLIO</h1>
         <div class="contenedor-inicio-name-year">
@@ -71,7 +74,7 @@
       </div>
     </section>
     <!--SECTION SOBRE MI-->
-    <section class="section-sobre-mi">
+    <section class="section-sobre-mi" id="section-sobre-mi">
       <div class="sobre-mi-principio">
         <img src="assets/escritorio.png" alt="Imagen perfil Nicole Gluj">
         <span></span>
@@ -107,8 +110,9 @@
         </div>
       </div>
     </section>
+
     <!--SECTION PROYECTOS-->
-    <section class="section-proyectos">
+    <section class="section-proyectos" id="section-proyectos">
       <h2>- PROYECTOS -</h2>
       <div class="contenedor-proyectos">
         <img src="assets/img-proyectos/proyecto-1.png" alt="Proyecto 1">
@@ -116,8 +120,9 @@
         <img src="assets/img-proyectos/proyecto-3.png" alt="Proyecto 3">
       </div>
     </section>
+
     <!--SECTION HABILIDADES-->
-    <section class="section-habilidades">
+    <section class="section-habilidades" id="section-habilidades">
       <h2>- HABILIDADES -</h2>
       <div class="contenedor-imagenes">
         <div class="contenedor-ac">
@@ -142,16 +147,26 @@
         </div>
       </div>
     </section>
+
     <!--SECTION FOOTER CONTACTO-->
     <footer>
-      <section class="contenedor-footer">
+      <section class="contenedor-footer" id="section-footer">
         <div class="contenedor-saludo">
           <h3>MI PORTFOLIO</h3>
           <P>Muchas gracias por ver mi portfolio! 💛 <br>
             Recorda que podes contactarme por cualquiera de mis redes sociales</P>
         </div>
-        <div class="contenedor-contacto">
+        <div class="contenedor-mensaje">
           <h3>CONTACTO</h3>
+          <form id="form">
+            <label class="text-input">Nombre:<br><input type="text" name="nombre"></label><br>
+            <label class="text-input">Email:<br><input type="email" name="email"></label><br>
+            <label class="text-input">Mensaje:<br><textarea name="mensaje"></textarea></label><br>
+            <button type="submit" class="button-mensaje">Enviar</button>
+          </form>
+        </div>
+        <div class="contenedor-contacto">
+          <h3>INFORMACION</h3>
           <p>Buenos Aires, Argentina</p>
           <p>nicolegluj@gmail.com</p>
           <p>+54 9 11 1234 5678</p>
